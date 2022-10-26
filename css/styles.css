@@ -91,9 +91,9 @@ header {
 }
 
 .header {
-border-bottom-style: solid;
-border-bottom-color: #ECECEC;
-border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
+  border-bottom-width: 1px;
 }
 
 .header-logo {
@@ -173,6 +173,11 @@ border-bottom-width: 1px;
   background-color: var(--dark-section);
   padding-top: 200px;
   padding-bottom: 200px;
+
+  background-image: url(../img/img-main.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .main-section {
@@ -206,7 +211,6 @@ border-bottom-width: 1px;
   margin-right: auto;
   margin-top: 30px;
   display: block;
-  
 }
 
 button {
@@ -227,12 +231,36 @@ button:focus {
   padding: 10px 32px;
 }
 
+/*-----------vector-----------*/
+
+.vector-list {
+  display: flex;
+  gap: 30px;
+  margin-top:94px;
+  margin-bottom:30px;
+}
+
+.vector-link {
+  width: 100%;
+  height: 100%;
+  background:#F5F4FA;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vector-item {
+  width: calc((100%-90px) / 4);
+  height: 120px;
+}
+
 /*------------Main item---------*/
 
 .main-item {
   background-color: var(--white);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  
+  padding-bottom:94px;
 }
 
 .main-item-list {
@@ -324,7 +352,7 @@ button:focus {
   letter-spacing: 0.03em;
   color: var(--dark-text);
 
-  padding-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .worker-photo {
@@ -337,12 +365,100 @@ button:focus {
   margin-top: 50px;
 }
 
+.workers-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.workers-soc-link {
+  width: 100%;
+  height: 100%;
+  background: var(--white);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.workers-soc-link:hover,
+.workers-soc-link:focus {
+  background-color: var(--blue);
+}
+
+.workers-soc-link:hover .workers-soc-icon,
+.workers-soc-link:focus .workers-soc-icon {
+  fill: var(--white);
+}
+
+.workers-soc-item {
+  width: 44px;
+  height: 44px;
+  margin-bottom: 30px;
+}
+
+.workers-soc-icon {
+  fill: #afb1b8;
+}
+
+/*.workers-soc-icon{
+  width: 20px;
+  height: 20px;
+}*/
+
+/*------------Klients---------------*/
+
+.about-klients {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--dark-title);
+  margin-top: 94px;
+}
+
+
+
+.klients-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+  margin-bottom: 94px;
+}
+
+.klients-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.klients-item {
+  width: calc((100%-150px) / 6);
+  height: 90px;
+}
+
+.klients-link:hover {
+  border-color: var(--blue);
+}
+
+.klients-icon{
+  fill: #AFB1B8;
+}
+
+.klients-link:hover .klients-icon {
+  fill: var(--blue);
+}
+
 /*-------------Contacts Adress-------------*/
 .about-contacts {
 }
 
 .about-map {
-  
 }
 
 .about-contacts-map {
@@ -387,6 +503,70 @@ button:focus {
   font-style: normal;
   margin-top: 20px;
 }
+
+/*-------------Footer------------*/
+
+.footer-container{
+display: flex;
+gap: 70px;
+}
+
+/*------------------------Footer right------------------*/
+
+.footer-soc-list {
+  display: flex;
+  
+  gap: 10px;
+}
+
+.footer-soc-link {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: var(--blue);
+}
+
+.footer-soc-link:hover .workers-soc-icon,
+.footer-soc-link:focus .workers-soc-icon {
+  fill: var(--white);
+}
+
+.footer-soc-item {
+  width: 44px;
+  height: 44px;
+  margin-bottom: 30px;
+}
+
+.footer-soc-icon {
+  fill: var(--white)
+}
+
+.footer-soc-title{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--white)
+}
+
+.footer-soc-title{
+  margin-bottom: 20px;
+}
+
+.footer-container-right{
+  margin-top: 12px;
+}
+
 
 /*------------------Btn-list--------------------------*/
 
@@ -447,7 +627,6 @@ button:focus {
 }
 
 .picture-image {
-  
   background-color: var(--white);
 }
 
@@ -465,7 +644,7 @@ button:focus {
 .picture-text-list {
   padding: 20px 24px 20px 24px;
   border-style: solid;
-  border-color: #EEEEEE;
+  border-color: #eeeeee;
   border-width: 1px;
   border-top: none;
   width: 370px;
@@ -477,12 +656,16 @@ button:focus {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--dark-text);
-
-  
 }
 
 .picture {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+
+.picture-image:hover,
+.picture-image:focus
+{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
