@@ -82,7 +82,7 @@ body {
   display: flex;
   gap: 50px;
   margin-left: 93px;
-  margin-right: 344px;
+  
 }
 
 header {
@@ -165,6 +165,7 @@ header {
 
 .header-container {
   display: flex;
+  justify-content: space-between;
 }
 
 .header-contact-list {
@@ -173,35 +174,34 @@ header {
   gap: 50px;
 }
 
-
-
-.icon-post-list{
-  display: flex;
-  gap: 10px;
-}
-
-.icon-phone-list{
-  display: flex;
-  gap: 10px;
-}
-
-.post-icon-link{
+.post-phone-link{
   fill: #757575;
+  margin-right: 10px;
 }
 
-.post-icon-link:hover ,
-.post-icon-link:focus {
+.header-mail {
+  display: flex;
+  align-items: center;
+}
+
+.header-mail:hover .post-phone-link{
   fill: var(--blue);
 }
 
-.phone-icon-link{
+.tel-phone-link{
   fill: #757575;
+  margin-right: 10px;
 }
 
-.phone-icon-link:hover,
-.phone-icon-link:focus{
+.header-tel {
+  display: flex;
+  align-items: center;
+}
+
+.header-tel:hover .tel-phone-link{
   fill: var(--blue);
 }
+
 
 
 /*----------------------------Main---------------------------*/
